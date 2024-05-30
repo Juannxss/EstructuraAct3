@@ -1,20 +1,18 @@
-
 package Principal;
 
 import Clases.AdultoMayor;
 
 public class Nodo2 {
-    
-    
-     
-    AdultoMayor informnacion;
-    Nodo2 siguiente;
 
+    AdultoMayor informnacion;//variable de tipo adulto mayor
+    Nodo2 siguiente;//variable de tipo nodo
+    //constructor que recibe un objeto adulto mayor
     public Nodo2(AdultoMayor info) {
         informnacion = info;
         siguiente = null;
     }
-
+    
+    //Setters y Getters
     public AdultoMayor getInfo() {
         return informnacion;
     }
@@ -30,8 +28,5 @@ public class Nodo2 {
     public void setSig(Nodo2 sig) {
         this.siguiente = sig;
     }
-     
-    
-    
-    
+
 }

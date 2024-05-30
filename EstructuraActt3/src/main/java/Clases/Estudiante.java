@@ -2,13 +2,16 @@ package Clases;
 
 public class Estudiante {
 
+    //atributos de la clase
     private String nombre, apellido, curso;
     private int edad;
     private float altura;
-
+    
+    //constructor vacio
     public Estudiante() {
     }
-
+    
+    //constructor con parametros
     public Estudiante(String nombre, String apellido, String curso, int edad, float altura) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -17,6 +20,7 @@ public class Estudiante {
         this.altura = altura;
     }
 
+    //Setters y Getters
     public String getNombre() {
         return nombre;
     }

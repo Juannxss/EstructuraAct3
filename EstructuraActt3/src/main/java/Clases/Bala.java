@@ -2,12 +2,14 @@
 package Clases;
 
 public class Bala {
-    
+    //atributos de la clase
     private String numeroBala, calibre, peso, material; 
 
+    //constructor vacio
     public Bala() {
     }
 
+    //constructor con parametros
     public Bala(String numeroBala, String calibre, String peso, String material) {
         this.numeroBala = numeroBala;
         this.calibre = calibre;
@@ -15,6 +17,7 @@ public class Bala {
         this.material = material;
     }
 
+    //Setters y Getters
     public String getNumeroBala() {
         return numeroBala;
     }

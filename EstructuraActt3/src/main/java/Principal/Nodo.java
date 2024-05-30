@@ -1,18 +1,19 @@
-
 package Principal;
 
 import Clases.Estudiante;
 
 public class Nodo {
-    
-    Estudiante informnacion;
-    Nodo siguiente;
 
+    Estudiante informnacion;//variable de tipo estudiante 
+    Nodo siguiente;//variable de tipo nodo
+
+    //constructor que recibe un objeto estudiante
     public Nodo(Estudiante info) {
         informnacion = info;
         siguiente = null;
     }
 
+    //Setters y Getters
     public Estudiante getInfo() {
         return informnacion;
     }
@@ -28,7 +29,5 @@ public class Nodo {
     public void setSig(Nodo sig) {
         this.siguiente = sig;
     }
-    
-    
-    
+
 }

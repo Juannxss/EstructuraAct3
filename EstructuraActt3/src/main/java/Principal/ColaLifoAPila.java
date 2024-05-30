@@ -4,14 +4,16 @@ import Clases.AdultoMayor;
 
 public class ColaLifoAPila {
 
-    private Nodo2 raiz;
-    private int numElement;
+    private Nodo2 raiz;//variable de tipo nodo
+    private int numElement;//numero de elementos de la coleccion de tipo entero
 
+    //conrtuctor vacio
     public ColaLifoAPila() {
         raiz = null;
 
     }
-
+    
+    //metodo para saber si la coleccion esta vacia
     public boolean esVacia() {
         if (raiz == null) {
             return true;
@@ -19,7 +21,8 @@ public class ColaLifoAPila {
             return false;
         }
     }
-
+     
+    //este metodo agrega los elementos a la coleccion
     public void añadir(AdultoMayor info) {
         Nodo2 nuevo = new Nodo2(info);
         nuevo.informnacion = info;
@@ -35,6 +38,7 @@ public class ColaLifoAPila {
         numElement++;
     }
 
+    //este metodo elimina los elementos de la coleccion
     public AdultoMayor eliminar() {
         if (esVacia()) {
 
@@ -46,7 +50,8 @@ public class ColaLifoAPila {
             return null;
         }
     }
-
+    
+    //este metodo imprime los atributos de los objetos en la coleccion
     public void imprimir() {
         Nodo2 reco = raiz;
         if (raiz != null) {

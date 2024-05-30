@@ -2,20 +2,23 @@
 package Clases;
 
 public class AdultoMayor {
-    
+   //Atributos de la clase
    private String nombre, apellido, genero; 
    private int edad; 
 
+   //constructor con parametros
     public AdultoMayor(String nombre, String apellido, String genero, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.genero = genero;
         this.edad = edad;
     }
-
+    
+    //contructor sin parametros
     public AdultoMayor() {
     }
 
+    //Setters y Getters
     public String getNombre() {
         return nombre;
     }

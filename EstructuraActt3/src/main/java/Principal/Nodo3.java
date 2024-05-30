@@ -7,19 +7,18 @@ import Clases.Bala;
 
 public class Nodo3 {
     
-    Bala informacion;
-     Nodo3 siguiente;
+    Bala informacion;//variable de tipo bala
+     Nodo3 siguiente;//bariable de tipo nodo
     
     public Nodo3() {
     }
-
+    //constructor que recibe un objeto estudiante
     public Nodo3(Bala info) {
         informacion = info;
         siguiente = null;
-    
-    
     }
 
+    //Setters y Getters
     public Bala getInformacion() {
         return informacion;
     }

@@ -84,10 +84,13 @@ public class EstructuraActt3 {
         colaFifo1.añadir(estu31);
         colaFifo1.añadir(estu32);
 
-        //Se llama al metodo imprimir para mostrar los atributos de los objetos almacenados
-        colaFifo1.imprimir();
-        System.out.println();
         
+        colaFifo1.imprimir();//Se llama al metodo imprimir para mostrar los atributos de los objetos almacenados
+        System.out.println();
+        colaFifo1.eliminar();//este metodo elimina el primer elenmento de la cola
+        System.out.println("El tamaño de la cola es: "+colaFifo1.tamaño());//se muestra la cantidad de elementos
+        
+        System.out.println();
         System.out.println("---COLA CON PRIORIDAD DESCENDETE---");
         
         //Se crean los objetos de tipo adulto mayor con atributos nombre, apellido, genero y edad
@@ -117,10 +120,14 @@ public class EstructuraActt3 {
         colaLifo1.añadir(adu9);
         colaLifo1.añadir(adu10);
 
-        //Se llama al metodo imprimir para mostrar todos los atributos de los objetos almacenados
-        colaLifo1.imprimir();
-
+       
+        colaLifo1.imprimir(); //Se llama al metodo imprimir para mostrar todos los atributos de los objetos almacenados
         System.out.println();
+        colaLifo1.eliminar();//se elimina el elemento de la cola
+        System.out.println("El tamaño de la cola es "+colaLifo1.tamaño());
+        System.out.println();
+        
+        
         //Se crean los objetos de tipo bala con atributos numero de bala, calibre, peso, y material
         Bala uno = new Bala("bala 1", "9mm", "115gr", "plomo");
         Bala dos = new Bala("bala 2", "9mm", "115gr", "plomo");
@@ -135,7 +142,7 @@ public class EstructuraActt3 {
         Bala once = new Bala("bala 11", "9mm", "115gr", "plomo");
         Bala doce = new Bala("bala 12", "9mm", "115gr", "plomo");
 
-        System.out.println();
+      
 
         System.out.println("---PILA PERSONALIZADA---");
         //Se crea una pila personalizada 
@@ -154,13 +161,12 @@ public class EstructuraActt3 {
         pila.apilar(once);
         pila.apilar(doce);
  
-        //Se llama al metodo imprimir para que muestre los objetos de la pila
-        pila.imprimir();
+         
+        pila.imprimir();//Se llama al metodo imprimir para que muestre los objetos de la pila
         System.out.println();
-        //Se llama al metodo desapilar para eliminar el elemento del tope de la pila
-        pila.desapilar();
-        //Se imprimen de vuelta los objetos
-        pila.imprimir();
+        pila.desapilar();//Se llama al metodo desapilar para eliminar el elemento del tope de la pila
+        
+        
 
         System.out.println();
         System.out.println("---COLA PERSONALIZADA COMO PILA---");
@@ -178,8 +184,8 @@ public class EstructuraActt3 {
         colaApila.añadir(adu9);
         colaApila.añadir(adu10);
  
-        //Se llama al metodo imprimir para mostrar los objetos alamcenados 
-        colaApila.imprimir();
-
+       
+        colaApila.imprimir(); //Se llama al metodo imprimir para mostrar los objetos alamcenados 
+        colaApila.eliminar();//se elimina el elemento del tope de la pila
     }
 }
