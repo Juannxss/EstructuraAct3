@@ -30,11 +30,12 @@ public class ColaLifo1 {
         if (esVacia()) {
             raiz = nuevo;
             fondo = nuevo;
-            numElement++;//aumenta el numero de elementos si se agrega un objeto
+          
         } else {
             fondo.siguiente = nuevo;
             fondo = nuevo;
         }
+          numElement++;//aumenta el numero de elementos si se agrega un objeto
     }
 
     //este metodo elimina los objetos de la cola

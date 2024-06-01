@@ -84,7 +84,6 @@ public class EstructuraActt3 {
         colaFifo1.añadir(estu31);
         colaFifo1.añadir(estu32);
 
-        
         colaFifo1.imprimir();//Se llama al metodo imprimir para mostrar los atributos de los objetos almacenados
         System.out.println();
         colaFifo1.eliminar();//este metodo elimina el primer elenmento de la cola
